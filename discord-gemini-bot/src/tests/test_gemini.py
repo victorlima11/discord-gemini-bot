@@ -3,8 +3,7 @@ import os
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), 'C:/Users/Victor/Documents/discord-gemini-bot/src')))
 
-from utils.gemini import query_gemini
-
+from utils.queryGemini import query_gemini
 
 class TesteGemini:
     @staticmethod
