@@ -13,8 +13,7 @@ class GeminiCog(commands.Cog):
         result = query_gemini(pergunta)
         await ctx.send(f"**Resposta:**\n{result}")
 
-    @app_commands.command(name="gemini_ai", description="Faz uma consulta ao Gemini AI")
-    @app_commands.describe(pergunta="Digite sua pergunta para a IA")
+    @app_commands.command()
     async def gemini_slash(self, interaction: discord.Interaction, pergunta: str):
         await interaction.response.defer(thinking=True)
         result = query_gemini(pergunta)

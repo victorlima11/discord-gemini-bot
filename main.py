@@ -10,6 +10,7 @@ PREFIX = "!"
 
 intents = discord.Intents.default()
 intents.message_content = True
+intents.members = True
 
 bot = commands.Bot(command_prefix=PREFIX, intents=intents)
 
@@ -19,8 +20,6 @@ async def load_cogs():
 @bot.event
 async def on_ready():
     print(f"{bot.user} is now online!")
-    synced = await bot.tree.sync()  
-    print(f"✅ {len(synced)} sync commmands!")
     await load_cogs()
 
 bot.run(TOKEN)
