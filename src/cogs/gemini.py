@@ -18,7 +18,7 @@ class GeminiCog(commands.Cog):
     async def gemini_slash(self, interaction: discord.Interaction, pergunta: str):
         await interaction.response.defer(thinking=True)
         result = query_gemini(pergunta)
-        await interaction.followup.send(f"**Resposta:**\n{result}")
+        await interaction.response.send(f"**Resposta:**\n{result}")
 
 async def setup(bot):
     await bot.add_cog(GeminiCog(bot))

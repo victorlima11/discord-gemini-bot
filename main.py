@@ -19,7 +19,8 @@ async def load_cogs():
 @bot.event
 async def on_ready():
     print(f"{bot.user} is now online!")
-    await bot.tree.sync()
+    synced = await bot.tree.sync()  
+    print(f"✅ {len(synced)} sync commmands!")
     await load_cogs()
 
 bot.run(TOKEN)
