@@ -1,7 +1,6 @@
 import discord
 from discord.ext import commands
 import os
-import asyncio
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -20,6 +19,7 @@ async def load_cogs():
 @bot.event
 async def on_ready():
     print(f"{bot.user} is now online!")
+    await bot.tree.sync()
     await load_cogs()
 
 bot.run(TOKEN)
