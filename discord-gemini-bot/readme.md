@@ -1,53 +1,55 @@
-# Bot Discord com Gemini AI
+# Discord Bot with Gemini AI
 
-## Sobre o Projeto
-Este é um bot para Discord que utiliza a API Gemini AI para responder perguntas e interagir com os usuários. O bot permite consultas diretas à IA por meio de comandos personalizáveis, incluindo aliases e opções de resposta privada.
+## [Portuguese](readme-pt.md)
 
-## Funcionalidade
-- Integração com a API Gemini AI
-- !gemini (prompt) para começar.
+## About the Project  
+This is a Discord bot that uses the Gemini AI API to answer questions and interact with users. The bot allows direct queries to the AI through customizable commands, including aliases and private response options.
 
-## Instalação e Configuração
-### 1. Clonar o repositório
+## Features  
+- Integration with the Gemini AI API  
+- `!gemini (prompt)` to start.
+
+## Installation and Setup  
+### 1. Clone the repository  
 ```bash
-    git clone https://github.com/seu-usuario/seu-repositorio.git
-    cd seu-repositorio
+    git clone https://github.com/your-username/your-repository.git
+    cd your-repository
 ```
 
-### 2. Criar e ativar um ambiente virtual (opcional, mas recomendado)
+### 2. Create and activate a virtual environment (optional but recommended)  
 ```bash
     python -m venv venv
     source venv/bin/activate  # Linux/macOS
     venv\Scripts\activate     # Windows
 ```
 
-### 3. Instalar dependências
+### 3. Install dependencies  
 ```bash
     pip install -r requirements.txt
 ```
 
-### 4. Configurar variáveis de ambiente
-Crie um arquivo `.env` na raiz do projeto e adicione:
+### 4. Configure environment variables  
+Create a `.env` file in the root of the project and add:  
 ```
-DISCORD_TOKEN=seu_token_do_discord
-GEMINI_KEY=sua_chave_api_gemini
+DISCORD_TOKEN=your_discord_token
+GEMINI_KEY=your_gemini_api_key
 ```
 
-### 5. Executar o bot
+### 5. Run the bot  
 ```bash
     python main.py
 ```
 
-## Como Usar
-No Discord, utilize:
+## How to Use  
+In Discord, use:  
 ```bash
-!gemini Qual o significado da vida?
+!gemini What is the meaning of life?
 ```
-O bot responderá diretamente no chat.
+The bot will respond directly in the chat.
 
-## Contribuição
-1. Fork o repositório
-2. Crie uma branch (`feature/minha-feature`)
-3. Faça suas alterações e commit (`git commit -m "Minha melhoria"`)
-4. Envie um Pull Request
+## Contribution  
+1. Fork the repository  
+2. Create a branch (`feature/my-feature`)  
+3. Make your changes and commit (`git commit -m "My improvement"`)  
+4. Submit a Pull Request
 
